@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Physically Plausible Dynamic Grasp Synthesis for Hand-Object Interactions.">
+  <meta name="keywords" content="DGRASP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFP: State-free Priors for Exploration in Off-Policy Reinforcement Learning</title>
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-72PW1FZDE4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-72PW1FZDE4');
+  </script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SFP: State-free Priors for Exploration in Off-Policy Reinforcement Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://al.is.mpg.de/person/mbagatella"> Marco Bagatella</a><sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/sammyc/">Sammy Christen</a><sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/hilliges/">Otmar Hilliges</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Department of Computer Science, ETH Zurich, Switzerland</span>
+            <br>
+            <span class="author-block">  <b>In TMLR '22</b></span>
+          </div>
+
+          <!-- <div class="column has-text-centered"> -->
+            <!-- <div class="publication-links"> -->
+              <!-- PDF Link. -->
+              <!-- <span class="link-block"> -->
+                <!-- <a href="https://ait.ethz.ch/projects/2022/d-grasp/downloads/d-grasp.pdf" -->
+                   <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                  <!-- <span class="icon"> -->
+                      <!-- <i class="fas fa-file-pdf"></i> -->
+                  <!-- </span> -->
+                  <!-- <span>Paper</span> -->
+                <!-- </a> -->
+              <!-- </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block"> -->
+                <!-- <a href="https://www.youtube.com/watch?v=5OqbDq-pgLc" -->
+                   <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                  <!-- <span class="icon"> -->
+                      <!-- <i class="fab fa-youtube"></i> -->
+                  <!-- </span> -->
+                  <!-- <span>Video</span> -->
+                <!-- </a> -->
+              <!-- </span> -->
+             <!-- &lt;!&ndash; Medium Link. &ndash;&gt; -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://eth-ait.medium.com/animate-implicit-shapes-with-forward-skinning-c7ebbf355694"-->
+<!--                    class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-medium-m"></i>-->
+<!--                  </span>-->
+<!--                  <span>Medium</span>-->
+<!--                </a>-->
+<!--              </span>-->
+<!--              &lt;!&ndash; Blog Link. &ndash;&gt;-->
+<!--              <span class="link-block">-->
+<!--                <a href="https://autonomousvision.github.io/snarf/"-->
+<!--                    class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-blogger-b"></i>-->
+<!--                  </span>-->
+<!--                  <span>Blog</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/christsa/dgrasp"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+<!--            </div>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--<section class="hero teaser">-->
+
+<!--    &lt;!&ndash;/ Paper video. &ndash;&gt;-->
+
+<!--</section>-->
+
+<!-- <section class="section_video">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <video id="teaser" controls height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/dgrasp_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <h2 class="subtitle has-text-centered">
+            D-Grasp is a solution to the new dynamic grasp synthesis task: given an object with a known 6D pose and a grasp reference, our goal is to generate motions that move the object to a target 6D pose.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract.  -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+    <!-- / Abstract. -->
+
+<!--    &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+<!--        <h2 class="title is-3">Video</h2>-->
+<!--        <div class="publication-video">-->
+<!--          <iframe width="560" height="315" src="https://www.youtube.com/embed/Q99t36qGZUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Paper video. &ndash;&gt;-->
+  <!-- </div>
+</section> -->
+
+<!-- <section class="hero is-light is-small">
+  <h2 class="title is-3 has-text-centered">D-Grasp Results</h2>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/drill.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/pitcher.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/sugarbox.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/banana.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/bleach.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/mug_03.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="https://ait.ethz.ch/projects/2022/d-grasp/downloads/can.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <h2 class="subtitle has-text-centered">
+        (Best viewed in Google Chrome)
+    </h2>
+  </div>
+</section> -->
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{christen2022dgrasp,
+      title={D-Grasp: Physically Plausible Dynamic Grasp Synthesis for Hand-Object Interactions},
+      author={Christen , Sammy and Kocabas, Muhammed and Aksan, Emre and Hwangbo, Jemin and Song, Jie and Hilliges, Otmar},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2022}
+    }</code></pre>
+  </div>
+</section> -->
+
+
+<!--<footer class="footer">-->
+<!--  <div class="container">-->
+<!--    <div class="content has-text-centered">-->
+<!--      <a class="icon-link"-->
+<!--         href="https://arxiv.org/pdf/2104.03953.pdf">-->
+<!--        <i class="fas fa-file-pdf"></i>-->
+<!--      </a>-->
+<!--      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>-->
+<!--        <i class="fab fa-github"></i>-->
+<!--      </a>-->
+<!--    </div>-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-8">-->
+<!--        <div class="content">-->
+<!--          <p>-->
+<!--            This website is licensed under a <a rel="license"-->
+<!--                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative-->
+<!--            Commons Attribution-ShareAlike 4.0 International License</a>.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>. We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+
+</body>
+</html>
