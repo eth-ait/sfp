@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="SFP: State-free Priors for Exploration in Off-Policy Reinforcement Learning.">
-  <meta name="keywords" content="DGRASP">
+  <meta name="keywords" content="SFP">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SFP: State-free Priors for Exploration in Off-Policy Reinforcement Learning</title>
 
@@ -63,17 +63,17 @@
             <span class="author-block">  <b>In TMLR '22</b></span>
           </div>
 
-          <!-- <div class="column has-text-centered"> -->
-            <!-- <div class="publication-links"> -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block"> -->
-                <!-- <a href="https://ait.ethz.ch/projects/2022/d-grasp/downloads/d-grasp.pdf" -->
-                   <!-- class="external-link button is-normal is-rounded is-dark"> -->
-                  <!-- <span class="icon"> -->
-                      <!-- <i class="fas fa-file-pdf"></i> -->
-                  <!-- </span> -->
-                  <!-- <span>Paper</span> -->
-                <!-- </a> -->
+              <span class="link-block">
+                <a href="https://openreview.net/pdf?id=HG7vlodGGm"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
               <!-- </span> -->
               <!-- Video Link. -->
               <!-- <span class="link-block"> -->
@@ -106,16 +106,16 @@
 <!--                </a>-->
 <!--              </span>-->
               <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/christsa/dgrasp"
+              <span class="link-block">
+                <a href="https://github.com/eth-ait/sfp"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                   </a>
-              </span> -->
-<!--            </div>-->
+              </span>
+            </div>
 
           </div>
         </div>
@@ -156,6 +156,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
+              Effective exploration is a crucial challenge in deep reinforcement learning. Behavioral priors have been shown to tackle this problem successfully, at the expense of reduced generality and restricted transferability. We thus propose temporal priors as a non-Markovian generalization of behavioral priors for guiding exploration in reinforcement learning. Critically, we focus on state-independent temporal priors, which exploit the idea of temporal consistency and are generally applicable and capable of transferring across a wide range of tasks. We show how dynamically sampling actions from a probabilistic mixture of policy and temporal prior can accelerate off-policy reinforcement learning in unseen downstream tasks. We provide empirical evidence that our approach improves upon strong baselines in long-horizon continuous control tasks under sparse reward settings.
           </p>
         </div>
       </div>
@@ -233,17 +234,18 @@
   </div>
 </section> -->
 
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{christen2022dgrasp,
-      title={D-Grasp: Physically Plausible Dynamic Grasp Synthesis for Hand-Object Interactions},
-      author={Christen , Sammy and Kocabas, Muhammed and Aksan, Emre and Hwangbo, Jemin and Song, Jie and Hilliges, Otmar},
-      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-      year={2022}
+    <pre><code>@misc{
+        bagatella2022temporl,
+        title={Tempo{RL}: Temporal Priors for Exploration in Off-Policy Reinforcement Learning},
+        author={Marco Bagatella and Sammy Joe Christen and Otmar Hilliges},
+        year={2022},
+        url={https://openreview.net/forum?id=HG7vlodGGm}
     }</code></pre>
   </div>
-</section> -->
+</section>
 
 
 <!--<footer class="footer">-->
