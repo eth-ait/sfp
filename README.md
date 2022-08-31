@@ -1,4 +1,7 @@
-# SFP: State-free Priors for Exploration in Off-Policy Reinforcement Learning - Under Review
+# SFP: State-free Priors for Exploration in Off-Policy Reinforcement Learning
+## [Paper](https://arxiv.org/abs/2205.13528) | [Project Page](https://eth-ait.github.io/sfp/)
+
+This repository contains the code to [our paper](https://arxiv.org/abs/2205.13528) published in Transactions on Machine Learning Research (TMLR) 2022.
 
 ## Environment Setup
 
@@ -187,4 +190,16 @@ python main.py --env window-open-v2 --use_prior False --action_prior parrot_stat
 ## Training SFP on window-open (visual)
 ```
 python main.py --env window-open-v2 --use_prior True --alpha 0.01 --visual True --replay_size 200000 --gpu True
+```
+
+
+## Citation
+```
+@article{bagatella2022sfp,
+title={{SFP}: State-free Priors for Exploration in Off-Policy Reinforcement Learning},
+author={Marco Bagatella and Sammy Joe Christen and Otmar Hilliges},
+journal={Transactions on Machine Learning Research},
+year={2022},
+url={https://openreview.net/forum?id=qYNfwFCX9a},
+}
 ```
