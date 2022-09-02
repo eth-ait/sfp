@@ -175,6 +175,52 @@
 </section>
     <!-- / Abstract. -->
 
+
+    <section class="section" id="result">
+      <div class="container is-max-desktop content">
+        <div class="has-text-centered">
+        <h2 class="title is-3">Results</h2>
+        </div>
+
+        <img src="static/images/task_agnostic.gif" alt="" width="180" height="180" id="training_prior"/>
+        <h3 class="title">Training a state-free prior</h3>
+        <p>
+          State-free priors can be trained on offline task-agnostic demonstrations (e.g. reaching random positions in an uncluttered environment, as on the left) and used to enable or accelerate RL on unseen downstream tasks.
+          While any conditional generative model which allows sampling is suitable, we rely on Real NVP Flow.
+        </p>
+
+        <h3 class="title has-text-centered">SFP (top) and SAC (bottom) in downstream learning</h3>
+
+        <div class="columns is-centered">
+
+          <div class="column">
+            <div class="content">
+              <h5 class="title has-text-centered">reach</h5>
+              <img src="static/images/reach-sfp.gif" alt="" class="center" style="padding-bottom: 30px;"/>
+              <img src="static/images/reach-sac.gif" alt="" class="center"/>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <h5 class="title has-text-centered">window-open</h5>
+              <img src="static/images/window-open-sfp.gif" alt="" class="center" style="padding-bottom: 30px;"/>
+              <img src="static/images/window-open-sac.gif" alt="" class="center"/>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <h5 class="title has-text-centered">door-open</h5>
+              <img src="static/images/door-open-sfp.gif" alt="" class="center" style="padding-bottom: 30px;"/>
+              <img src="static/images/door-open-sac.gif" alt="" class="center"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </section>
+
 <!--    &lt;!&ndash; Paper video. &ndash;&gt;-->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
